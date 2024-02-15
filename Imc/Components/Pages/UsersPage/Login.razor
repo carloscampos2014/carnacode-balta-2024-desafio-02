@@ -1,0 +1,30 @@
+﻿@page "/login"
+@inject IHttpContextAccessor HttpContextAccessor
+@using System.Security.Claims
+
+<h3>Login</h3>
+
+<button @onclick="RealizarLogin">Fazer Login</button>
+
+@code {
+    private void RealizarLogin()
+    {
+        // Lógica de autenticação bem-sucedida
+        // Aqui você autenticaria o usuário e obteria as informações de autenticação
+
+        // Exemplo simples para simular um usuário autenticado
+        var identity = new ClaimsIdentity(new[]
+        {
+            new Claim(ClaimTypes.Name, "usuario")
+            // Adicione outras reivindicações conforme necessário
+        }, "apiauth");
+
+        var user = new ClaimsPrincipal(identity);
+
+        // Armazene o usuário autenticado na sessão
+        HttpContextAccessor.HttpContext.Session.SetString("UsuarioAutenticado", "true");
+
+        // Redirecionar para a página principal após o login bem-sucedido
+        navigation.NavigateTo("/");
+    }
+}

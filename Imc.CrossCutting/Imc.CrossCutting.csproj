@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Imc.Application\Imc.Application.csproj" />
+    <ProjectReference Include="..\Imc.Domain\Imc.Domain.csproj" />
+    <ProjectReference Include="..\Imc.Infrastructure\Imc.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Dev\carnacode-balta-2024-desafio-02\Imc.CrossCutting\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Dev\carnacode-balta-2024-desafio-02\Imc.CrossCutting\.editorconfig" />
+  </ItemGroup>
+</Project>

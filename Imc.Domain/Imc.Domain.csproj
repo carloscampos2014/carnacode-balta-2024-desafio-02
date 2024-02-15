@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Dev\carnacode-balta-2024-desafio-02\Imc.Domain\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Dev\carnacode-balta-2024-desafio-02\Imc.Domain\.editorconfig" />
+  </ItemGroup>
+
+</Project>

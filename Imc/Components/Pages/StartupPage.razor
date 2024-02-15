@@ -1,0 +1,14 @@
+﻿@page "/startup"
+
+<h3>Startup Page</h3>
+<!-- Conteúdo da sua página de inicialização aqui -->
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Aguarde por 2 segundos (ajuste conforme necessário)
+        await Task.Delay(2000);
+
+        // Redirecionar para a página desejada (por exemplo, a página de login)
+        //navigation.NavigateTo("/counter");
+    }
+}
